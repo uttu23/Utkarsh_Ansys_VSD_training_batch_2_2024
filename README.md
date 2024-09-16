@@ -162,3 +162,6 @@ Next and Final step is to extract the parasitics of that particular layout and c
 
 **Snapshot of final lef created -** 
 ![image](https://github.com/user-attachments/assets/fc73b6f7-0feb-4228-9fe3-492fb3419bd7)
+
+- Now in the existing spice file we need to make some changes like including proper model files and applying input voltage. Final spice file
+![image](https://github.com/user-attachments/assets/84bf75a9-e5bc-4c48-aac8-597af83a294d)
