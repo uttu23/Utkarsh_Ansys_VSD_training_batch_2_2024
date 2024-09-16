@@ -1,3 +1,4 @@
+### Day 1 -Inception of open-source EDA, OpenLANE and sky130 PDK
 **chip components**
 
 1. Pads: Through which we can send the signal inside the chip.
@@ -13,6 +14,10 @@
 - Floorplanning -> Dimensions, Pin locations and rows are defined
 - Placement -> Placing cells on floor planned rows. It is done in two steps 1) Global (not legal placement) 2) Detailed routing
 - CTS -> To deliver a clock to all seq elements with minimum skew
+
+
+### Day 2 - Good floorplan vs bad floorplan and introduction to library cells
+
 
 **Antenna Rules Violation**
 when metal wire segment is fabricated it can act as antenna. Reactive ion etching causes charge to accumulate on the wire. Transistor can get damaged due to this.
@@ -41,6 +46,7 @@ To overcome this issue we use bridging method.
 ![image](https://github.com/user-attachments/assets/a0776584-784a-4505-905c-bacd1c7ba713)
 
 - Flop ratio = (total number for D flop/ total number of cells) = (1613/14876)
+
 
 **Power Mesh**
 
@@ -139,3 +145,5 @@ Next and Final step is to extract the parasitics of that particular layout and c
 ![image](https://github.com/user-attachments/assets/a7838333-30ff-4c41-883b-427d0be75a89)
 
 
+**Snapshot of final lef created -** 
+![image](https://github.com/user-attachments/assets/fc73b6f7-0feb-4228-9fe3-492fb3419bd7)
