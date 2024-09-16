@@ -32,4 +32,13 @@ To overcome this issue we use bridging method.
 - height depends upon gap between power and ground rail
 - Width depends upon the drive strength
 
+**Review files after design prep and run synthesis**
+
+- first run command 'run_synthesis' on interactive window
+
+- After run gets completed we will get summary of total cells in the design 
+
+![image](https://github.com/user-attachments/assets/a0776584-784a-4505-905c-bacd1c7ba713)
+
+- Flop ratio = (total number for D flop/ total number of cells) = (1613/14876)
 
