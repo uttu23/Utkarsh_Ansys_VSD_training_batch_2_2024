@@ -93,6 +93,23 @@ First step is to implement the function itself and second step is to model the P
 - 
 ![image](https://github.com/user-attachments/assets/b070a630-1a74-4d7c-99d9-d2949ba2bbe8)
 
+**Layout design step**
 
+- In Layout Design First step is to get the function implemented through the MOS transistor through a set of PMOS and NMOS transistor and the second step is to get the PMOS network graph and the nNMOS network graph out of the design that has been implemented.
+![image](https://github.com/user-attachments/assets/00cc530f-372e-48c1-8f87-3da62cb309a5)
+
+After getting the network graphs next step is to obtain the Euler's path. Eule's path is basically the path which is traced only once.
+
+![image](https://github.com/user-attachments/assets/f482da90-2f04-421b-8d62-064623e10449)
+
+Next step is to draw stick diagram based on the Euler's path. This stick diagram is derived out of the circuit diagram.
+
+![image](https://github.com/user-attachments/assets/5f286e4c-19c4-4008-a62f-acfb5a1482d2)
+
+Next step is to convert this stick diagram into a typical Layout, into a proper layout and then get the proper rule we have discissed earlier. Once we get the particular layout then we have the cell width, cell length and all the specifications will be there like drain current, pin locations and so on.
+
+![image](https://github.com/user-attachments/assets/cb9ceeee-7b51-48dc-9891-e358a57efb32)
+
+Next and Final step is to extract the parasatics of that particular layout and charaterise it in terms od timing. So before that the output of the layout design will be GDSll. Once you get the extracted spice netlist then we characterize it. Characterization helps in getting timing, noiseand power information.
 
 
