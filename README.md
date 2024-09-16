@@ -173,3 +173,17 @@ Next and Final step is to extract the parasitics of that particular layout and c
 ![image](https://github.com/user-attachments/assets/3fa21b41-fea5-4fbd-a173-980b1fd952e9)
 
 ![WhatsApp Image 2024-09-16 at 13 42 12](https://github.com/user-attachments/assets/0bb11959-bd37-470c-a4a3-6b3fd3e9f84c)
+
+**Clock Tree Synthesis**
+
+- For clock tree synthesis it's important that we maintain 0 skew between first stage flop and 2nd stage flop and if do simple like below image then arrival time for clock will be different between ff1 and ff2 and there will be skew of **Tff2 - Tff1**
+![WhatsApp Image 2024-09-16 at 19 24 36](https://github.com/user-attachments/assets/3fee5033-7f2d-49fd-a42b-75216ee93717)
+
+![image](https://github.com/user-attachments/assets/f480fd9d-bd09-4b1d-b984-e2cae02845c7)
+
+
+- To overcome this issue designer comes up with great idea of **_H-Tree_**, in this method we first identify all the clock paths and then we select the mid point such that distance of that point to all flops will be equal in order to make arrival time of clock same for each flops.
+
+![image](https://github.com/user-attachments/assets/c49c3a5e-afa3-46f1-97a9-6893934e6879)
+
+- for CTS we use repeaters, and it is used for clock feeding so that there is not much distortion in launch signal and repeaters should have equal rise and fall time
