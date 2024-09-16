@@ -188,4 +188,18 @@ Next and Final step is to extract the parasitics of that particular layout and c
 
 - for CTS we use repeaters, and it is used for clock feeding so that there is not much distortion in launch signal and repeaters should have equal rise and fall time
 
+- For improving the slack related issue we generally replace cell with different sizes of cell. So, that we can improve drive strength.
 
+- **Routing: -** It is finding the best shortest possible connection between two end points with one point being the source and other point being the target and with a smaller number of twist and turns.
+
+
+- **Maze-Routing (Lee's Algorithm): -** Therse should not be zig-zag lines of connections most of the connections should be in L shape or in Z shape. So according to algorithm first it creates some grids and grids are routing at the backend. It's called as routing grid. There are some numbers of grids on this routing having some dimensions. SO here we are having two points one is 'Source' and the other is 'Target'. With the help of this routing grid algorithm has to find out the best possible way between them.
+
+**Process of routing is divided into two steps -**
+
+1. Fast Route 
+2. Detailed Route
+
+![image](https://github.com/user-attachments/assets/556a0f04-dbef-4c46-bc5d-812e8036dbd3)
+
+- In the Global route, the routing region is divided into the rectangular grids cells as shown in the figure above. And it is represented as cores 3D routing graph. Global route is done by FAST route engine. The detailed route is done by TritonRoute engine. A,B,C,D are four pins which we want to connect through routing. and this whole image of A,B,C,D shows the net.
