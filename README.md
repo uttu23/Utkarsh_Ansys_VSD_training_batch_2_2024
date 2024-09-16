@@ -26,3 +26,10 @@ To overcome this issue we use bridging method.
 - How to define width and height of chip?
 
 ![WhatsApp Image 2024-09-16 at 13 08 55](https://github.com/user-attachments/assets/a5342455-6b80-4b0c-91c3-4388e83a0389)
+
+**How to define cell size?**
+
+- height depends upon gap between power and ground rail
+- Width depends upon the drive strength
+
+
