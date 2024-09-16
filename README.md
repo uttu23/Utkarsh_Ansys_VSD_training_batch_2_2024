@@ -187,3 +187,5 @@ Next and Final step is to extract the parasitics of that particular layout and c
 ![image](https://github.com/user-attachments/assets/c49c3a5e-afa3-46f1-97a9-6893934e6879)
 
 - for CTS we use repeaters, and it is used for clock feeding so that there is not much distortion in launch signal and repeaters should have equal rise and fall time
+
+
