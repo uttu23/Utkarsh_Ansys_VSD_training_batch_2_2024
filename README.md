@@ -207,3 +207,32 @@ Next and Final step is to extract the parasitics of that particular layout and c
 ![image](https://github.com/user-attachments/assets/556a0f04-dbef-4c46-bc5d-812e8036dbd3)
 
 - In the Global route, the routing region is divided into the rectangular grids cells as shown in the figure above. And it is represented as cores 3D routing graph. Global route is done by FAST route engine. The detailed route is done by TritonRoute engine. A,B,C,D are four pins which we want to connect through routing. and this whole image of A,B,C,D shows the net.
+
+**Lab steps to configure synthesis settings to fix slack and include vsdinv**
+
+![image](https://github.com/user-attachments/assets/58c19ccd-b847-4d5c-a4c9-128d33783cc9)
+
+
+**We will give the following commmands in the terminal in openlane directory**
+
+prep -design picorv32a -tag 04-09_18-46 -overwrite
+
+set lefs [glob $::env(DESIGN_DIR)/src/*.lef]
+
+add_lefs -src $lefs
+
+echo $::env(SYNTH_STRATEGY)
+
+set ::env(SYNTH_STRATEGY) "DELAY 3"
+
+echo $::env(SYNTH_BUFFERING)
+
+echo $::env(SYNTH_SIZING)
+
+set ::env(SYNTH_SIZING) 1
+
+echo $::env(SYNTH_DRIVING_CELL)
+
+run_synthesis
+
+prep -design picorv32a -tag 04-09_18-46 -overwrite
