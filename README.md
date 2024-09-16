@@ -42,3 +42,10 @@ To overcome this issue we use bridging method.
 
 - Flop ratio = (total number for D flop/ total number of cells) = (1613/14876)
 
+**Power Mesh**
+
+- The phenomenon we have seen was causing the lowering of the supply voltage, this problem occurred because power has applied to one point only. The solution of the problem is using multiple power supply. So, every block will take charge from nearest power supply and similarly dump the charge to the nearer ground. this type of power supply is called mesh.
+
+![image](https://github.com/user-attachments/assets/698aa86a-fc50-44f2-8dfc-e93123f40b71)
+
+
