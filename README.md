@@ -166,6 +166,8 @@ Next and Final step is to extract the parasitics of that particular layout and c
 - Now in the existing spice file we need to make some changes like including proper model files and applying input voltage. Final spice file
 ![image](https://github.com/user-attachments/assets/84bf75a9-e5bc-4c48-aac8-597af83a294d)
 
+### Day 4 - Pre-layout timing analysis and importance of good clock tree
+
 **Concept of delay table**
 
 - for each CELL we have separate delay table with varying input slew vs output load and reason why we have such table is that input slew and load depends upon many factors like interconnect capacitance etc. So, designer comes up with this idea of 2d table for delay. From the below image we can map the delay according to slew and load value.
@@ -189,6 +191,8 @@ Next and Final step is to extract the parasitics of that particular layout and c
 - for CTS we use repeaters, and it is used for clock feeding so that there is not much distortion in launch signal and repeaters should have equal rise and fall time
 
 - For improving the slack related issue we generally replace cell with different sizes of cell. So, that we can improve drive strength.
+
+**Day 5 -Final step for RTL2GDS using tritinRoute and openSTA**
 
 - **Routing: -** It is finding the best shortest possible connection between two end points with one point being the source and other point being the target and with a smaller number of twist and turns.
 
