@@ -63,5 +63,36 @@ To overcome this issue we use bridging method.
 
 ![WhatsApp Image 2024-09-16 at 13 41 40](https://github.com/user-attachments/assets/c7f49cde-ca17-4f75-a104-e314472bcac3)
 
+**Cell design and characterization flows**
+
+**- Inputs for cell design flow**
+
+1. In Cell Design Flow, Gates, flipflops, buffers are named as 'Standard Cells'. These standard cells are being placed in the section called as 'Library'.And in the library many other cells are available which have same functionality, but the size is different.
+
+![image](https://github.com/user-attachments/assets/f1faab31-d57e-42fc-82b1-ebb3b04ef991)
+
+If you lokk into one of the inverter from the library the cell design flowis as follows
+
+The inverter has to represented in form of the shape, drive strength, power charracteristic and so on. Here cell design flow is devided into three parts.
+
+1. Inputs
+2. Design steps
+3. Outputs
+
+- **1)Inputs**:- Inputs required for cell design is PDKs, DRC and LVS rules SPICE models, library and user defined specs. In DRC& LVS rules tech file is provided which contains design rules and actual values. Rules can be converted in to code. SPICE MODEL tells about threshold voltage equation.
+- 
+![image](https://github.com/user-attachments/assets/42999612-c951-4dea-8ff4-ee548e8739c7)
+
+- **2)design steps:**- Design involves three steps which are circuit design, layout design, characterization.
+
+In circuitc Design there are two steps.
+
+First step is to implement the function itself and second step is to model the PMOS nad NMOS transistor in such a fashion in order to meet the library.
+
+- **3)Outputs** - The typical output what we get from the circuit design is CDL(circuit description language) file,GDSII,LEF,extracted spice netlist(.cir).
+- 
+![image](https://github.com/user-attachments/assets/b070a630-1a74-4d7c-99d9-d2949ba2bbe8)
+
+
 
 
