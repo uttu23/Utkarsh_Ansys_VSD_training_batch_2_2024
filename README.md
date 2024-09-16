@@ -102,7 +102,7 @@ Next step is to convert this stick diagram into a typical Layout, into a proper 
 
 ![image](https://github.com/user-attachments/assets/cb9ceeee-7b51-48dc-9891-e358a57efb32)
 
-Next and Final step is to extract the parasatics of that particular layout and charaterise it in terms od timing. So before that the output of the layout design will be GDSll. Once you get the extracted spice netlist then we characterize it. Characterization helps in getting timing, noiseand power information.
+Next and Final step is to extract the parasitics of that particular layout and charaterize it in terms od timing. So before that the output of the layout design will be GDSll. Once you get the extracted spice netlist then we characterize it. Characterization helps in getting timing, noise and power information.
 
 
 **How to characterize the timing attributes for a cell?**
