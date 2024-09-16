@@ -192,23 +192,7 @@ Next and Final step is to extract the parasitics of that particular layout and c
 
 - For improving the slack related issue we generally replace cell with different sizes of cell. So, that we can improve drive strength.
 
-**Day 5 -Final step for RTL2GDS using tritinRoute and openSTA**
-
-- **Routing: -** It is finding the best shortest possible connection between two end points with one point being the source and other point being the target and with a smaller number of twist and turns.
-
-
-- **Maze-Routing (Lee's Algorithm): -** Therse should not be zig-zag lines of connections most of the connections should be in L shape or in Z shape. So according to algorithm first it creates some grids and grids are routing at the backend. It's called as routing grid. There are some numbers of grids on this routing having some dimensions. SO here we are having two points one is 'Source' and the other is 'Target'. With the help of this routing grid algorithm has to find out the best possible way between them.
-
-**Process of routing is divided into two steps -**
-
-1. Fast Route 
-2. Detailed Route
-
-![image](https://github.com/user-attachments/assets/556a0f04-dbef-4c46-bc5d-812e8036dbd3)
-
-- In the Global route, the routing region is divided into the rectangular grids cells as shown in the figure above. And it is represented as cores 3D routing graph. Global route is done by FAST route engine. The detailed route is done by TritonRoute engine. A,B,C,D are four pins which we want to connect through routing. and this whole image of A,B,C,D shows the net.
-
-**Lab steps to configure synthesis settings to fix slack and include vsdinv**
+- **Lab steps to configure synthesis settings to fix slack and include vsdinv**
 
 ![image](https://github.com/user-attachments/assets/58c19ccd-b847-4d5c-a4c9-128d33783cc9)
 
@@ -236,3 +220,35 @@ echo $::env(SYNTH_DRIVING_CELL)
 run_synthesis
 
 prep -design picorv32a -tag 04-09_18-46 -overwrite
+
+After synthesis, we have observed that the slack is nagative.
+
+wns(worst negative slack)= -23.89
+
+tns(total negative slack)= -711.59.
+
+-Now we run_synthesis and run_floorplan to see the effect of changes made on the chip area and slack value.
+
+-Commands for floorplan: init_floorplan place_io tap_decap_or
+
+Then, run_placement
+
+![image](https://github.com/user-attachments/assets/770b34c6-e5f4-4264-a44d-d42a7c615a9c)
+
+
+**Day 5 -Final step for RTL2GDS using tritinRoute and openSTA**
+
+- **Routing: -** It is finding the best shortest possible connection between two end points with one point being the source and other point being the target and with a smaller number of twist and turns.
+
+
+- **Maze-Routing (Lee's Algorithm): -** Therse should not be zig-zag lines of connections most of the connections should be in L shape or in Z shape. So according to algorithm first it creates some grids and grids are routing at the backend. It's called as routing grid. There are some numbers of grids on this routing having some dimensions. SO here we are having two points one is 'Source' and the other is 'Target'. With the help of this routing grid algorithm has to find out the best possible way between them.
+
+**Process of routing is divided into two steps -**
+
+1. Fast Route 
+2. Detailed Route
+
+![image](https://github.com/user-attachments/assets/556a0f04-dbef-4c46-bc5d-812e8036dbd3)
+
+- In the Global route, the routing region is divided into the rectangular grids cells as shown in the figure above. And it is represented as cores 3D routing graph. Global route is done by FAST route engine. The detailed route is done by TritonRoute engine. A,B,C,D are four pins which we want to connect through routing. and this whole image of A,B,C,D shows the net.
+
