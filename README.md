@@ -113,3 +113,29 @@ Next and Final step is to extract the parasitics of that particular layout and c
 
 ![WhatsApp Image 2024-09-16 at 13 41 40](https://github.com/user-attachments/assets/c7f49cde-ca17-4f75-a104-e314472bcac3)
 
+
+![image](https://github.com/user-attachments/assets/ff98036a-3372-4784-b3de-471e68549ccc)
+
+![image](https://github.com/user-attachments/assets/6b5d6b2d-f401-4163-aca8-9ab91823571f)
+
+![image](https://github.com/user-attachments/assets/e6b910b0-1b4e-46f7-b06c-d65dbcc17baf)
+
+![image](https://github.com/user-attachments/assets/c9b32185-fe2e-4926-8c2c-dcce9ebdbfa7)
+
+![image](https://github.com/user-attachments/assets/eba7438b-03b0-4d09-afbc-301c253bf552)
+
+![image](https://github.com/user-attachments/assets/31914b99-1d1b-40ba-b5af-f484dc708157)
+
+![image](https://github.com/user-attachments/assets/b4e4b4b6-b421-4dea-8084-5cc66e45268e)
+
+![image](https://github.com/user-attachments/assets/a10cd7bd-0fab-4e58-86cb-bd1f5706ee28)
+
+![image](https://github.com/user-attachments/assets/106c6d6f-7889-46cf-bdd0-672a4e7e1479)
+
+![image](https://github.com/user-attachments/assets/eeee6d18-555f-4987-a1dc-6f290a2275c3)
+
+![image](https://github.com/user-attachments/assets/7bfa6d78-34ef-4858-97bd-c3bbdf9390c6)
+
+![image](https://github.com/user-attachments/assets/a7838333-30ff-4c41-883b-427d0be75a89)
+
+
