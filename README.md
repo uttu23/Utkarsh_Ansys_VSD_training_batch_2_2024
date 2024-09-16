@@ -13,3 +13,9 @@
 - Floorplanning -> Dimensions, Pin locations and rows are defined
 - Placement -> Placing cells on floor planned rows. It is done in two steps 1) Global (not legal placement) 2) Detailed routing
 - CTS -> To deliver a clock to all seq elements with minimum skew
+
+**Antenna Rules Violation**
+when metal wire segment is fabricated it can act as antenna. Reactive ion etching causes charge to accumulate on the wire. Transistor can get damaged due to this.
+To overcome this issue we use bridging method.
+![image](https://github.com/user-attachments/assets/81762328-3f72-4fe3-93b3-8905e2a1e8ea)
+![image](https://github.com/user-attachments/assets/7a00b716-46ec-4371-b6c2-daeb51aca0a9)
