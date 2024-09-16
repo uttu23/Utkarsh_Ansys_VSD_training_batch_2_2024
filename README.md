@@ -48,4 +48,20 @@ To overcome this issue we use bridging method.
 
 ![image](https://github.com/user-attachments/assets/698aa86a-fc50-44f2-8dfc-e93123f40b71)
 
+**Area of Chip**
+
+- From generated DEF file we can see the area of design - 
+![image](https://github.com/user-attachments/assets/d6f36754-b489-42c1-80c8-48efc3e8c774)
+
+- Here we need to divide 660685 by 1000 units to get the value in um. Final area would be 660.685 x 671.405
+
+- **How to characterize the timing attributes for a cell?**
+
+- First, we need to write the spice deck for timing characterization and then we have to do the transient run so that we can find the input transition, output transition and cell delay
+
+![image](https://github.com/user-attachments/assets/2ca20de1-fec2-4464-af7d-f138f90186a6)
+
+![WhatsApp Image 2024-09-16 at 13 41 40](https://github.com/user-attachments/assets/c7f49cde-ca17-4f75-a104-e314472bcac3)
+
+
 
