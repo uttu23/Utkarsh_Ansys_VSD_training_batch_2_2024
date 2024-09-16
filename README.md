@@ -1,2 +1,4 @@
-![318229086-ff3696b5-cf69-41dd-86e5-160875e8eaba](https://github.com/user-attachments/assets/718a425c-3f6e-4edb-bef4-63e6ec351a79)
-![318229086-ff3696b5-cf69-41dd-86e5-160875e8eaba](https://github.com/user-attachments/assets/45284178-162b-4a91-a30e-3f3c5f9de37c)
+chip components
+Pads: Through which we can send the signal inside the chip.
+Core: Place where all the logic gates are fixed.
+Die: Present at the corner. it is the size of the entire chip.
