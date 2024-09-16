@@ -144,6 +144,21 @@ Next and Final step is to extract the parasitics of that particular layout and c
 
 ![image](https://github.com/user-attachments/assets/a7838333-30ff-4c41-883b-427d0be75a89)
 
+### Day 3 - Design library cell using Magic Layout and ngspice characterization
+
+**Lab steps to git clone vsdstdcelldesign**
+
+- To get the clone, copy the clone address from reporetery and paste in openlane terminal after the command **_git clone_**. this will create the folder called "vsdstdcelldesign" in openlane directory.
+- Using command "magic -T sky130A.tech sky130_inv.mag &" we can see the layout of inverter for which we will be doing characterization and in layout file we see all the layers like diffusion, polysilicon and and also we can check whether layers present are DRC legal or not.
+
+![image](https://github.com/user-attachments/assets/0a523b1a-2c60-40f7-9717-d166f08f423c)
+
+- Then we got to learn about how fabrication is done using mask 16 method and finally CMOS looks like
+![image](https://github.com/user-attachments/assets/beedf3ad-b297-4756-ac6b-b0a8b9e24f10)
+
+- Now from existing layout of inverter we need extract the spice deck and for that we can use the command **ext2spice cthresh 0 rthresh 0** and then again **ext2spice** and then we can check in current working directory .spice file would be created
+![image](https://github.com/user-attachments/assets/bc1d1a3a-2e8a-424b-8c58-98f65d397100)
+
 
 **Snapshot of final lef created -** 
 ![image](https://github.com/user-attachments/assets/fc73b6f7-0feb-4228-9fe3-492fb3419bd7)
