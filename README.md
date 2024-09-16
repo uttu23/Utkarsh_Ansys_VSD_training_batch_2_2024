@@ -165,3 +165,11 @@ Next and Final step is to extract the parasitics of that particular layout and c
 
 - Now in the existing spice file we need to make some changes like including proper model files and applying input voltage. Final spice file
 ![image](https://github.com/user-attachments/assets/84bf75a9-e5bc-4c48-aac8-597af83a294d)
+
+**Concept of delay table**
+
+- for each CELL we have separate delay table with varying input slew vs output load and reason why we have such table is that input slew and load depends upon many factors like interconnect capacitance etc. So, designer comes up with this idea of 2d table for delay. From the below image we can map the delay according to slew and load value.
+
+![image](https://github.com/user-attachments/assets/3fa21b41-fea5-4fbd-a173-980b1fd952e9)
+
+![WhatsApp Image 2024-09-16 at 13 42 12](https://github.com/user-attachments/assets/0bb11959-bd37-470c-a4a3-6b3fd3e9f84c)
