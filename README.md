@@ -55,14 +55,6 @@ To overcome this issue we use bridging method.
 
 - Here we need to divide 660685 by 1000 units to get the value in um. Final area would be 660.685 x 671.405
 
-- **How to characterize the timing attributes for a cell?**
-
-- First, we need to write the spice deck for timing characterization and then we have to do the transient run so that we can find the input transition, output transition and cell delay
-
-![image](https://github.com/user-attachments/assets/2ca20de1-fec2-4464-af7d-f138f90186a6)
-
-![WhatsApp Image 2024-09-16 at 13 41 40](https://github.com/user-attachments/assets/c7f49cde-ca17-4f75-a104-e314472bcac3)
-
 **Cell design and characterization flows**
 
 **- Inputs for cell design flow**
@@ -112,4 +104,12 @@ Next step is to convert this stick diagram into a typical Layout, into a proper 
 
 Next and Final step is to extract the parasatics of that particular layout and charaterise it in terms od timing. So before that the output of the layout design will be GDSll. Once you get the extracted spice netlist then we characterize it. Characterization helps in getting timing, noiseand power information.
 
+
+**How to characterize the timing attributes for a cell?**
+
+- First, we need to write the spice deck for timing characterization and then we have to do the transient run so that we can find the input transition, output transition and cell delay
+
+![image](https://github.com/user-attachments/assets/2ca20de1-fec2-4464-af7d-f138f90186a6)
+
+![WhatsApp Image 2024-09-16 at 13 41 40](https://github.com/user-attachments/assets/c7f49cde-ca17-4f75-a104-e314472bcac3)
 
